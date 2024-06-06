@@ -34,17 +34,6 @@ for i in range(0,num_samples):
     pt.sample() # Random Sampling
     point_list.append(pt) # Appending to the empty list
     
-# print(point_list)
-
-num = 5 # Sample random point
-
-# Since each member of point_list is a point object, all members will possess the 
-# fields/variables and the methods/functions defined for the point obj
-print(point_list[num].number) # 38th element of the list-> 38th point object
-# Expected Output: 37 
-print('x:',point_list[num].x)    
-print('y:',point_list[num].y)
-point_list[num].print_me() # Information about the point
 
 print('\n#### Plot Data ####')
 Visual = Vis(point_list)
@@ -54,12 +43,6 @@ Visual.define_fig()
 Visual.plot_samples()
 Visual.plot_circle(R)
 
-    
-# pt = Point(1984,22.3) # pt is a new Point Object
-# print('Number of the point: ', pt.number)
-# print('Radius of the point: ',pt.radius)
-# print('x.coord: ', pt.x)
-# print('y.coord: ', pt.y)
 
 
 # STARTING THE COMPUTATION OF PI
